@@ -1,3 +1,5 @@
+package usingFiles;
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -12,14 +14,14 @@ public class Folders {
 
         File[] folders = path.listFiles(File::isDirectory);
 
-        System.out.println("Folders: ");
+        System.out.println("Training.Folders: ");
         for (File f : folders){
             System.out.println(f);
         }
 
         File[] files = path.listFiles(File::isFile);
 
-        System.out.println("Files: ");
+        System.out.println("Training.Files: ");
         for (File f : files){
             System.out.println(f);
         }
